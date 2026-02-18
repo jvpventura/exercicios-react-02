@@ -42,13 +42,14 @@ A aplicação possui as seguintes páginas:
 Cada página possui conteúdo básico e navegação entre elas.
 
 ✅ Rotas Implementadas
-Rota	Descrição
-/	Página Home
-/about	Página About
-/contact	Página Contact
-/user/:id	Página dinâmica baseada no ID
-*	Página 404 para rotas inválidas
-✅ Parâmetros de URL
+Rota Descrição
+/ Página Home
+/about Página About
+/contact Página Contact
+/user/:id Página dinâmica baseada no ID
+
+- Página 404 para rotas inválidas
+  ✅ Parâmetros de URL
 
 Foi implementada uma rota dinâmica:
 
@@ -102,16 +103,16 @@ Isso permite que as páginas sejam carregadas sob demanda, reduzindo o tamanho d
 src/
 │
 ├── components/
-│   ├── Header.jsx
-│   ├── Footer.jsx
-│   └── Sidebar.jsx
+│ ├── Header.jsx
+│ ├── Footer.jsx
+│ └── Sidebar.jsx
 │
 ├── pages/
-│   ├── Home.jsx
-│   ├── About.jsx
-│   ├── Contact.jsx
-│   ├── User.jsx
-│   └── NotFound.jsx
+│ ├── Home.jsx
+│ ├── About.jsx
+│ ├── Contact.jsx
+│ ├── User.jsx
+│ └── NotFound.jsx
 │
 ├── App.jsx
 └── main.jsx
@@ -149,6 +150,12 @@ Como estruturar layouts reutilizáveis
 Como tratar páginas não encontradas (404)
 
 Como melhorar performance utilizando lazy loading
+
+## 🎥 Demonstração
+
+<p align="center">
+  <img src="./docs/animacao.gif" alt="Demonstração da aplicação" width="800"/>
+</p>
 
 📌 Autor
 
