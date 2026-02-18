@@ -1,25 +1,155 @@
-# React + Vite
+Este projeto foi desenvolvido com o objetivo de praticar e consolidar conhecimentos sobre roteamento em aplicações React, utilizando o React Router em conjunto com o React.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A aplicação simula um website simples com múltiplas páginas, implementando navegação entre rotas, componentes de layout reutilizáveis, lazy loading para melhoria de performance, tratamento de rotas inválidas e uso de parâmetros dinâmicos na URL.
 
-Currently, two official plugins are available:
+🎯 Objetivo da Atividade
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Configurar o React Router
 
-## React Compiler
+Criar múltiplas páginas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Trabalhar com componentes de layout
 
-## Expanding the ESLint configuration
+Implementar lazy loading
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Tratar rotas inválidas (404)
 
-- Print da Pagina Incial: <img width="1915" height="660" alt="image" src="https://github.com/user-attachments/assets/bd462523-3f4a-41c1-8941-1346ee330326" />
+Utilizar parâmetros de URL
 
-- Print da pagina Sobre: <img width="1920" height="647" alt="image" src="https://github.com/user-attachments/assets/186d65ac-8ed8-4d01-9ffd-f64f7cf6b188" />
+🧠 Funcionalidades Implementadas
+✅ Configuração do React Router
 
-- Print da pagina Contanto: <img width="1909" height="644" alt="image" src="https://github.com/user-attachments/assets/d6a0172f-484a-4b4d-a239-7fc57cf58dec" />
+Instalação e configuração do react-router-dom
 
-- Print da pagina 404: <img width="1920" height="723" alt="image" src="https://github.com/user-attachments/assets/bf3fd9f1-8f59-4460-b6a6-9df0e9e4b124" />
+Uso do BrowserRouter
 
+Organização das rotas no App.jsx
+
+✅ Páginas Criadas
+
+A aplicação possui as seguintes páginas:
+
+🏠 Home
+
+ℹ️ About
+
+📞 Contact
+
+👤 User (rota dinâmica)
+
+❌ NotFound (404)
+
+Cada página possui conteúdo básico e navegação entre elas.
+
+✅ Rotas Implementadas
+Rota	Descrição
+/	Página Home
+/about	Página About
+/contact	Página Contact
+/user/:id	Página dinâmica baseada no ID
+*	Página 404 para rotas inválidas
+✅ Parâmetros de URL
+
+Foi implementada uma rota dinâmica:
+
+/user/:id
+
+Utilizando o hook:
+
+useParams()
+
+Exemplo de uso:
+
+/user/1
+/user/25
+
+A página exibe conteúdo dinâmico com base no ID informado.
+
+✅ Layout Compartilhado
+
+O projeto utiliza componentes reutilizáveis para melhorar a organização:
+
+📌 Header
+
+📌 Footer
+
+(Opcional) Sidebar
+
+Esses componentes aparecem em todas as páginas, mantendo a estrutura consistente da aplicação.
+
+✅ Melhoria de Performance
+
+Foi utilizado Lazy Loading com:
+
+React.lazy()
+React.Suspense
+
+Isso permite que as páginas sejam carregadas sob demanda, reduzindo o tamanho do carregamento inicial da aplicação.
+
+🛠️ Tecnologias Utilizadas
+
+⚛️ React
+
+🔀 React Router
+
+⚡ Vite
+
+💻 JavaScript (ES6+)
+
+🎨 CSS
+
+📁 Estrutura do Projeto
+src/
+│
+├── components/
+│   ├── Header.jsx
+│   ├── Footer.jsx
+│   └── Sidebar.jsx
+│
+├── pages/
+│   ├── Home.jsx
+│   ├── About.jsx
+│   ├── Contact.jsx
+│   ├── User.jsx
+│   └── NotFound.jsx
+│
+├── App.jsx
+└── main.jsx
+⚙️ Como Executar o Projeto
+
+1️⃣ Clone o repositório:
+
+git clone https://github.com/jvpventura/exercicios-react-02.git
+
+2️⃣ Acesse a pasta do projeto:
+
+cd exercicios-react-02
+
+3️⃣ Instale as dependências:
+
+npm install
+
+4️⃣ Execute o projeto:
+
+npm run dev
+
+A aplicação estará disponível em:
+
+http://localhost:5173
+📚 Aprendizados
+
+Com este projeto foi possível aprender:
+
+Como configurar e organizar rotas em React
+
+Como criar rotas dinâmicas com parâmetros
+
+Como estruturar layouts reutilizáveis
+
+Como tratar páginas não encontradas (404)
+
+Como melhorar performance utilizando lazy loading
+
+📌 Autor
+
+Desenvolvido por João Ventura
