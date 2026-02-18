@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #f1f5f9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+}
+
+header h1 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+nav a {
+  text-decoration: none;
+  color: #cbd5e1;
+  margin-left: 30px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* CONTAINER */
+.container {
+  flex: 1;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* HERO CARD */
+.page-card {
+  width: 100%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 60px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.page-card h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.page-card p {
+  font-size: 18px;
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+
+/* BOTÕES */
+.page-links {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn,
+.page-links a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  background: #38bdf8;
+  color: #0f172a;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover,
+.page-links a:hover {
+  background: #0ea5e9;
+  transform: translateY(-3px);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 25px;
+  background: rgba(15, 23, 42, 0.9);
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* NOT FOUND */
+.notfound {
+  text-align: center;
+  margin-top: 120px;
+}
+
+.notfound h1 {
+  font-size: 120px;
+  font-weight: 800;
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+.notfound h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.notfound p {
+  opacity: 0.7;
+  margin-bottom: 30px;
+}
+
+/* ANIMAÇÃO */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= RESPONSIVIDADE ================= */
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    padding: 20px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    margin: 10px;
+  }
+
+  .page-card {
+    padding: 35px 25px;
+  }
+
+  .page-card h2 {
+    font-size: 28px;
+  }
+
+  .page-card p {
+    font-size: 16px;
+  }
+
+  .notfound h1 {
+    font-size: 70px;
+  }
+}
